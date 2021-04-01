@@ -6,9 +6,9 @@ USE chat;
 
 CREATE TABLE messages (
   /* Describe your table here.*/
-  id int(2),
-  username varchar(20),
-  message varchar(150),
+  id int NOT NULL AUTO_INCREMENT,
+  userid int NOT NULL,
+  text varchar(200) NOT NULL,
   roomname varchar(20),
   PRIMARY KEY (id)
 );
@@ -17,17 +17,17 @@ CREATE TABLE messages (
 
 CREATE TABLE users (
   /* Describe your table here.*/
-  userID int(3),
+  id int NOT NULL AUTO_INCREMENT,
   username varchar(20),
   PRIMARY KEY (userID)
 );
 
-CREATE TABLE rooms (
-  /* Describe your table here.*/
-  roomID int(3),
-  roomname varchar(20),
-  PRIMARY KEY (roomID)
-);
+-- CREATE TABLE rooms (
+--   /* Describe your table here.*/
+--   roomID int(3),
+--   roomname varchar(20),
+--   PRIMARY KEY (roomID)
+-- );
 
 
 /*  Execute this file from the command line by typing:

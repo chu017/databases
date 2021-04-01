@@ -16,14 +16,13 @@ var mysql = require('mysql');
 
 var mysql = require('mysql');
 
-var con = mysql.createConnection({
-  host: 'localhost',
+var newConnection = mysql.createConnection({
   user: 'root',
   password: 'password',
-  insecureAuth: true
+  database: 'chat'
 });
 
-con.connect(function(err) {
+newConnection.connect(function(err) {
   if (err) { throw err; }
   console.log('Connected!');
 });

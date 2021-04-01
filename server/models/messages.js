@@ -6,5 +6,5 @@ module.exports = {
   }, // a function which produces all the messages
   create: function () {
 
-  } // a function which can be used to insert a message into the database
+  }, // a function which can be used to insert a message into the database
 };
